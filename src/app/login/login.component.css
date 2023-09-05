@@ -1,4 +1,5 @@
- /* Responsive Styles */
+
+/* Responsive Styles */
 @media screen and (max-width: 767px) {
     .card-container > *:not(.circle-link) ,
     .terminal {
@@ -27,4 +28,7 @@
     }
   }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> d06b5fdd567813322c928e2ab39ab295f9e50822
