@@ -7,7 +7,13 @@
 
 .card {
   flex: 0 0 calc(50% - 20px); /* 2 tarjetas por fila en dispositivos medianos y más grandes */
-  max-width: calc(50% - 20px);
+  max-width: calc(70% - 50px);
+  width: 100px; /* Ajusta el ancho de acuerdo a tus necesidades */
+  padding: 20px; /* Ajusta el espaciado interno de la tarjeta según tus necesidades */
+  border-radius: 8px; /* Opcional: agrega bordes redondeados */
+  background-color: #ffffff; /* Opcional: cambia el color de fondo de la tarjeta */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Agrega la sombra a la tarjeta */
+  /* La sombra se compone de valores de desplazamiento en X y Y, un radio y un color RGBA */
 }
 
 .card-body {
@@ -21,4 +27,16 @@
   /* Estilos cuando el mouse está sobre el card */
   transform: scale(1.1);
   /* Aumenta el tamaño del card al 110% */
+}
+
+
+.btn {
+color: white;
+background-color:  #92002d;
+width: 150px; /* Cambia el ancho según tus necesidades */
+  height: 40px; /* Cambia la altura según tus necesidades */
+  font-size: 24px; 
+  text-align: center; 
+  padding: 10px 20px;
+  line-height: 12px;
 }
