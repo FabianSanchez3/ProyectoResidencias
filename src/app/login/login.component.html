@@ -1,8 +1,6 @@
 
-
 <style>
     .toolbar {
-      position: absolute;
       top: 0;
       left: 0;
       right: 0;
@@ -14,77 +12,24 @@
       font-weight: 600;
     }
   
-    
-/* Responsive Styles */
-@media screen and (max-width: 767px) {
-    .card-container > *:not(.circle-link) ,
-    .terminal {
-      width: 100%;
-    }
-
-    .card:not(.highlight-card) {
-      height: 16px;
-      margin: 8px 0;
-    }
-
-    .card.highlight-card span {
-      margin-left: 72px;
-    }
-
-    svg#rocket-smoke {
-      right: 120px;
-      transform: rotate(-5deg);
-    }
-  }
-
-  @media screen and (max-width: 575px) {
-    svg#rocket-smoke {
-      display: none;
-      visibility: hidden;
-    }
-  }
   </style>
 <div class="toolbar" role="banner">
       <div class="spacer"></div>
   </div>
   <div class="content" role="main">
 
-    <section class="vh-100" style="background-color: #c0c0c0;">
-      <div class="container py-5 h-100">
-        <div class="row d-flex justify-content-center align-items-center h-100">
-          <div class="col-12 col-md-8 col-lg-6 col-xl-5">
-            <div class="card shadow-2-strong" style="border-radius: 1rem;">
-              <div class="card-body p-5 text-center">
-    
-                <h3 class="mb-5">Inicia Sesion</h3>
-    
-                <div class="form-outline mb-4">
-                  <input type="email" id="typeEmailX-2" class="form-control form-control-lg" />
-                  <label class="form-label" for="typeEmailX-2">Email</label>
-                </div>
-    
-                <div class="form-outline mb-4">
-                  <input type="password" id="typePasswordX-2" class="form-control form-control-lg" />
-                  <label class="form-label" for="typePasswordX-2">Password</label>
-                </div>
-    
-                <!-- Checkbox -->
-                <div class="form-check d-flex justify-content-start mb-4">
-                  <input class="form-check-input" type="checkbox" value="" id="form1Example3" />
-                  <label class="form-check-label" for="form1Example3"> Recordar Contraseña </label>
-                </div>
-    
-                <button class="btn btn-primary btn-lg btn-block" type="submit">Login</button>
-    
-                <hr class="my-4">
-
-    
-              </div>
-            </div>
-          </div>
+    <div class="login-container">
+      <form class="login-form">
+        <h2>Iniciar sesión</h2>
+        <div class="form-group">
+          <label for="username">Correo:</label>
+          <input type="text" id="correo" name="Correo" placeholder="Correo" required>
         </div>
-      </div>
-    </section>
-
-   
+        <div class="form-group">
+          <label for="password">Contraseña:</label>
+          <input type="password" id="password" name="password" placeholder="Contraseña" required>
+        </div>
+        <button type="submit" >Iniciar sesión</button>
+      </form>
+    </div>
     
