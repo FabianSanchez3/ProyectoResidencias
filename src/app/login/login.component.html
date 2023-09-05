@@ -416,7 +416,7 @@
     </div>
   
     <!-- Terminal -->
-    <div class="terminal" [ngSwitch]="selection.value">
+    <div class="terminal">
         <pre *ngSwitchDefault>ng generate component xyz</pre>
         <pre *ngSwitchCase="'material'">ng add @angular/material</pre>
         <pre *ngSwitchCase="'pwa'">ng add @angular/pwa</pre>
@@ -464,5 +464,5 @@
   
   </div>
 
-  <router-outlet></router-outlet>
+
   
