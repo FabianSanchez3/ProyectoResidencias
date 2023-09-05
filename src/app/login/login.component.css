@@ -1,3 +1,16 @@
+.toolbar {
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #92002d;
+  color: white;
+  font-weight: 600;
+}
+
+
 /* Estilos para hacer el formulario responsivo */
 .login-container {
     display: flex;
