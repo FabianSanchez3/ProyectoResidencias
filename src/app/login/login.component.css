@@ -16,6 +16,7 @@
 .login-container {
   display: flex;
   justify-content: center;
+  font-family: Arial;
   align-items: center;
   height: 100vh;
   
@@ -54,6 +55,7 @@ button {
   border-radius: 4px;
   cursor: pointer;
   display: block;
+  font-family: Arial;
   padding: 0.5rem 1rem;
   width: 200px;
   margin: 0 auto;
