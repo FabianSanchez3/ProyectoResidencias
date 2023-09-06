@@ -99,3 +99,18 @@
   padding: 10px 20px;
   line-height: 12px;
 }
+
+/* Estilos para pantallas pequeñas (menos de 768px de ancho) */
+@media (max-width: 767px) {
+  .toolbar {
+    height: 40px; /* Reduce la altura de la barra de herramientas */
+    font-size: 14px; /* Reduce el tamaño de fuente para el texto */
+  }
+
+  .container {
+    height: 76vh; /* Reduce la altura del contenedor */
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+  }
+}
