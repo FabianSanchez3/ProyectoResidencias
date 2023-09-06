@@ -17,7 +17,7 @@ import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
-<<<<<<< HEAD
+
 AppComponent,
 LoginComponent,
 MenuComponent,
@@ -27,16 +27,6 @@ ReporteConsumosComponent,
 ReportecierreGranjasComponent,
 
 ],
-=======
-    AppComponent,
-    LoginComponent,
-    MenuComponent,
-    ReporteMortalidadesComponent,
-    ReportePesadasComponent,
-    ReporteConsumosComponent,
-    ReportecierreGranjasComponent,
-  ],
->>>>>>> 8444a2f9f63a2996ce7564fb43edf9cb0b4f52cf
   imports: [
     BrowserModule,
     AppRoutingModule,
