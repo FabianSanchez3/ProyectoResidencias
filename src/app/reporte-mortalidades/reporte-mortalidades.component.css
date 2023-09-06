@@ -1,0 +1,49 @@
+/* Estilos para pantallas grandes */
+.toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #92002d;
+    color: white;
+    font-weight: 600;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 88vh;
+  }
+
+
+  .btn {
+    color: white;
+    background-color: #92002d;
+    width: 250px;
+    /* Cambia el ancho según tus necesidades */
+    height: 50px;
+    /* Cambia la altura según tus necesidades */
+    font-size: 16px;
+    text-align: center;
+    padding: 10px 20px;
+    line-height: 12px;
+  }
+  
+  /* Estilos para pantallas pequeñas (menos de 768px de ancho) */
+  @media (max-width: 767px) {
+    .toolbar {
+      height: 40px; /* Reduce la altura de la barra de herramientas */
+      font-size: 14px; /* Reduce el tamaño de fuente para el texto */
+    }
+  
+    .container {
+      height: 135vh; /* Reduce la altura del contenedor */
+      justify-content: center;
+      text-align: left;
+      align-items: center;
+    }
+  }

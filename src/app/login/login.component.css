@@ -19,7 +19,7 @@
   font-family: Arial;
   align-items: center;
   height: 100vh;
-  
+
 }
 
 .login-form {
@@ -48,7 +48,7 @@ input[type="password"] {
 }
 
 button {
-  background-color:#92002d;
+  background-color: #92002d;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -59,7 +59,7 @@ button {
   padding: 0.5rem 1rem;
   width: 200px;
   margin: 0 auto;
-  
+
 }
 
 button:hover {
