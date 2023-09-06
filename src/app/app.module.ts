@@ -13,14 +13,14 @@ import { ReportecierreGranjasComponent } from './reportecierre-granjas/reporteci
 
 @NgModule({
   declarations: [
-AppComponent,
-LoginComponent,
-MenuComponent,
-ReporteMortalidadesComponent,
-ReportePesadasComponent,
-ReporteConsumosComponent,
-ReportecierreGranjasComponent,
-],
+    AppComponent,
+    LoginComponent,
+    MenuComponent,
+    ReporteMortalidadesComponent,
+    ReportePesadasComponent,
+    ReporteConsumosComponent,
+    ReportecierreGranjasComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
