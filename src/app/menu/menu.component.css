@@ -6,14 +6,19 @@
 }
 
 .card {
+  text-align: center;
+  display: flex; /* Utilizar flexbox para centrar elemento */
+  flex-direction: column; /* Alinear elementos en columna */
+  align-items: center; /* Centrar elementos horizontalmente */
+  justify-content: center; /* Centrar elementos verticalmente */
   flex: 0 0 calc(50% - 20px); /* 2 tarjetas por fila en dispositivos medianos y más grandes */
   max-width: calc(70% - 50px);
-  width: 100px; /* Ajusta el ancho de acuerdo a tus necesidades */
+  width: 200px; /* Ajusta el ancho de acuerdo a tus necesidades */
+  height: 350px; /* Ajusta el largo de acuerdo a tus necesidades */
   padding: 20px; /* Ajusta el espaciado interno de la tarjeta según tus necesidades */
   border-radius: 8px; /* Opcional: agrega bordes redondeados */
   background-color: #ffffff; /* Opcional: cambia el color de fondo de la tarjeta */
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Agrega la sombra a la tarjeta */
-  /* La sombra se compone de valores de desplazamiento en X y Y, un radio y un color RGBA */
 }
 
 .card-body {
@@ -29,6 +34,10 @@
   /* Aumenta el tamaño del card al 110% */
 }
 
+.card img {
+  width: 200px; /* ancho */
+  height: 200px; /* largo */
+}
 
 .btn {
 color: white;
