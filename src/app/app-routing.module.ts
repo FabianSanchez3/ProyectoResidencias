@@ -10,6 +10,11 @@ import { ReportecierreGranjasComponent } from './reportecierre-granjas/reporteci
 const routes: Routes = [
 
   { path: 'login', component: LoginComponent },
+   {
+    path: '',
+    redirectTo: 'login',
+    pathMatch: 'full'
+  },
   { path: 'menu', component: MenuComponent},
   { path: 'consumos', component: ReporteConsumosComponent},
   { path: 'mortalidades', component: ReporteMortalidadesComponent},
