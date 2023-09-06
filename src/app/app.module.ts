@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {FormsModule} from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +12,8 @@ import { ReporteMortalidadesComponent } from './reporte-mortalidades/reporte-mor
 import { ReportePesadasComponent } from './reporte-pesadas/reporte-pesadas.component';
 import { ReporteConsumosComponent } from './reporte-consumos/reporte-consumos.component';
 import { ReportecierreGranjasComponent } from './reportecierre-granjas/reportecierre-granjas.component';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -20,11 +24,15 @@ ReporteMortalidadesComponent,
 ReportePesadasComponent,
 ReporteConsumosComponent,
 ReportecierreGranjasComponent,
+
 ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatInputModule,
+    MatButtonModule,
+    FormsModule 
   ],
   providers: [],
   bootstrap: [AppComponent],
