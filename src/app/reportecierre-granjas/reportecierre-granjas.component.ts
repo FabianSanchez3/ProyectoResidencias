@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./reportecierre-granjas.component.css']
 })
 export class ReportecierreGranjasComponent {
+  SendDataonChange(event: any) {
+    console.log(event.target.value);
+    }
 
 }
