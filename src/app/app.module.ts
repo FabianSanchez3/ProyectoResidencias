@@ -15,7 +15,6 @@ import { ReportecierreGranjasComponent } from './reportecierre-granjas/reporteci
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 
-
 @NgModule({
   declarations: [
 
@@ -34,11 +33,9 @@ ReportecierreGranjasComponent,
     FlexLayoutModule,
     MatInputModule,
     MatButtonModule,
-    FormsModule,
+    FormsModule 
   ],
   providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule { }
-
-

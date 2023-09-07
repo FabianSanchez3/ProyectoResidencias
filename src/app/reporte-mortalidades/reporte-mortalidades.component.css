@@ -41,9 +41,16 @@
     }
   
     .container {
-      height: 135vh; /* Reduce la altura del contenedor */
+      height: 80vh; /* Reduce la altura del contenedor */
       justify-content: center;
       text-align: left;
       align-items: center;
     }
   }
+
+  /* Establece el ancho y alto deseado para el input de fecha */
+.custom-date-input {
+  width: 200px; /* Cambia el ancho según tus necesidades */
+  height: 40px; /* Cambia la altura según tus necesidades */
+  /* Puedes ajustar otros estilos según tus preferencias */
+}
