@@ -1,0 +1,61 @@
+ /* Estilos para pantallas grandes */
+ .toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #92002d;
+    color: white;
+    font-weight: 600;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 88vh; /* Usa min-height para evitar que el contenido se desborde en pantallas pequeñas */
+}
+
+.btn {
+    color: white;
+    background-color: #92002d;
+    width: 250px; /* Cambia el ancho según tus necesidades */
+    height: 50px; /* Cambia la altura según tus necesidades */
+    font-size: 16px;
+    text-align: center;
+    padding: 10px 20px;
+    line-height: 12px;
+}
+
+/* Estilos para pantallas pequeñas (menos de 768px de ancho) */
+@media (max-width: 767px) {
+    .toolbar {
+        height: 40px; /* Reduce la altura de la barra de herramientas */
+        font-size: 14px; /* Reduce el tamaño de fuente para el texto */
+    }
+
+    .container {
+        min-height: auto; /* Restablece la altura del contenedor para que se ajuste automáticamente */
+        text-align: left;
+        height: 150vh;
+    }
+
+    /* Estilos para los elementos de etiqueta en pantallas pequeñas */
+    .col-md-4 {
+        text-align: left;
+    }
+
+    /* Estilos para los botones en pantallas pequeñas */
+    .col-md-6 {
+        text-align: center;
+    }
+
+    /* Estilos para el input de Lotes en pantallas pequeñas */
+    .input-container {
+        justify-content: center; /* Centra el input horizontalmente */
+        align-items: center; /* Centra el input verticalmente */
+    }
+}

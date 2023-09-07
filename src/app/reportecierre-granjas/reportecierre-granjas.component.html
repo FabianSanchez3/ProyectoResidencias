@@ -1,1 +1,265 @@
-<p>reportecierre-granjas works!</p>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+
+
+
+<!-- toolbar -->
+<div class="toolbar" role="banner">
+    <div class="spacer"></div>
+</div>
+
+<!-- Contenedor principal -->
+<div class="container mt-4">
+    <div class="row">
+        <!-- Col 1-->
+        <div class="col-12 text-center">
+            <h2><strong>Análisis de cierre</strong></h2>
+            <h2><strong>de granjas</strong></h2>
+        </div>
+        <!-- col2  -->
+        <div class="col-md-4 col-sm-12 mt-2">
+            <label for="selectBox text"><strong>Empresa:</strong></label>
+        </div>
+        <div class="col-md-8 col-sm-12 mt-2">
+            <select class="form-select" aria-label="Default select example">
+                <option selected>- - Selección - -</option>
+                <option value="Op1-Empresa">Op 1</option>
+                <option value="Op2-Empresa">Op 2</option>
+                <option value="Op3-Empresa">Op 3</option>
+                <option value="Op4-Empresa">Op 4</option>
+                <option value="Op5-Empresa">Op 5</option>
+                <option value="Op6-Empresa">Op 6</option>
+                <option value="Op7-Empresa">Op 7</option>
+                <option value="Op8-Empresa">Op 8</option>
+                <option value="Op9-Empresa">Op 9</option>
+                <option value="Op10-Empresa">Op 10</option>
+                <option value="Op11-Empresa">Op 11</option>
+                <option value="Op12-Empresa">Op 12</option>
+                <option value="Op13-Empresa">Op 13</option>
+                <option value="Op14-Empresa">Op 14</option>
+                <option value="Op15-Empresa">Op 15</option>
+                <option value="Op16-Empresa">Op 16</option>
+                <option value="Op17-Empresa">Op 17</option>
+                <option value="Op18-Empresa">Op 18</option>
+                <option value="Op19-Empresa">Op 19</option>
+                <option value="Op20-Empresa">Op 20</option>
+            </select>
+        </div>
+        <!-- col 3 -->
+        <div class="col-md-4 col-sm-12 mt-2">
+            <label for="selectBox text"><strong>Granja:</strong></label>
+        </div>
+        <div class="col-md-8 col-sm-12 mt-2">
+            <select class="form-select" aria-label="Default select example">
+                <option selected>- - Selección - -</option>
+                <option value="Op1-Granja">Op 1</option>
+                <option value="Op2-Granja">Op 2</option>
+                <option value="Op3-Granja">Op 3</option>
+                <option value="Op4-Granja">Op 4</option>
+                <option value="Op5-Granja">Op 5</option>
+                <option value="Op6-Granja">Op 6</option>
+                <option value="Op7-Granja">Op 7</option>
+                <option value="Op8-Granja">Op 8</option>
+                <option value="Op9-Granja">Op 9</option>
+                <option value="Op10-Granja">Op 10</option>
+                <option value="Op11-Granja">Op 11</option>
+                <option value="Op12-Granja">Op 12</option>
+                <option value="Op13-Granja">Op 13</option>
+                <option value="Op14-Granja">Op 14</option>
+                <option value="Op15-Granja">Op 15</option>
+                <option value="Op16-Granja">Op 16</option>
+                <option value="Op17-Granja">Op 17</option>
+                <option value="Op18-Granja">Op 18</option>
+                <option value="Op19-Granja">Op 19</option>
+                <option value="Op20-Granja">Op 20</option>
+            </select>
+        </div>
+
+        <!-- col 4 -->
+        <div class="col-md-4 col-sm-12 mt-2">
+            <label for="selectBox text"><strong>No. Engorda:</strong></label>
+        </div>
+        <div class="col-md-8 col-sm-12 mt-2">
+            <select class="form-select" aria-label="Default select example">
+                <option selected>No hay engordas registradas, revise por favor...</option>
+                <option value="Op1-Engorda">Op 1</option>
+                <option value="Op2-Engorda">Op 2</option>
+                <option value="Op3-Engorda">Op 3</option>
+                <option value="Op4-Engorda">Op 4</option>
+                <option value="Op5-Engorda">Op 5</option>
+                <option value="Op6-Engorda">Op 6</option>
+                <option value="Op7-Engorda">Op 7</option>
+                <option value="Op8-Engorda">Op 8</option>
+                <option value="Op9-Engorda">Op 9</option>
+                <option value="Op10-Engorda">Op 10</option>
+                <option value="Op11-Engorda">Op 11</option>
+                <option value="Op12-Engorda">Op 12</option>
+                <option value="Op13-Engorda">Op 13</option>
+                <option value="Op14-Engorda">Op 14</option>
+                <option value="Op15-Engorda">Op 15</option>
+                <option value="Op16-Engorda">Op 16</option>
+                <option value="Op17-Engorda">Op 17</option>
+                <option value="Op18-Engorda">Op 18</option>
+                <option value="Op19-Engorda">Op 19</option>
+                <option value="Op20-Engorda">Op 20</option>
+            </select>
+        </div>
+
+        <!-- col 5 -->
+        <div class="col-md-3 col-sm-12 mt-2">
+            <label for="selectBox text"><strong>Fecha de entrada: </strong></label>
+        </div>
+        <div class="col-md-1 col-sm-12 mt-2">
+            <label for="selectBox text"><strong>Dia:</strong></label>
+        </div>
+        <div class="col-md-2 col-sm-12 mt-2">
+            <select class="form-select" aria-label="Default select example">
+                <option selected>- - Selección - -</option>
+                <option value="Uno">1</option>
+                <option value="Dos">2</option>
+                <option value="Tres">3</option>
+                <option value="Cuatro">4</option>
+                <option value="Cinco">5</option>
+                <option value="Seis">6</option>
+                <option value="Siete">7</option>
+                <option value="Ocho">8</option>
+                <option value="Nueve">9</option>
+                <option value="Diez">10</option>
+                <option value="Once">11</option>
+                <option value="Doce">12</option>
+                <option value="Trece">13</option>
+                <option value="Catorce">14</option>
+                <option value="Quince">15</option>
+                <option value="Dieciseis">16</option>
+                <option value="Diecisiete">17</option>
+                <option value="Dieciocho">18</option>
+                <option value="Diecinueve">19</option>
+                <option value="Veinte">20</option>
+                <option value="Veintiuno">21</option>
+                <option value="Veintidos">22</option>
+                <option value="Veintitres">23</option>
+                <option value="Veinticuatro">24</option>
+                <option value="Veinticinco">25</option>
+                <option value="Veintiseis">26</option>
+                <option value="Veintisiete">27</option>
+                <option value="Veintiocho">28</option>
+                <option value="Veintinueve">29</option>
+                <option value="Treinta">30</option>
+                <option value="Treintaiuno">31</option>
+            </select>
+        </div>
+        <div class="col-md-1 col-sm-12 mt-2">
+            <label for="selectBox text"><strong>Mes:</strong></label>
+        </div>
+        <div class="col-md-2 col-sm-12 mt-2">
+            <select class="form-select" aria-label="Default select example">
+                <option selected>- - Selección - -</option>
+                <option value="Enero">Enero</option>
+                <option value="Febrero">Febrero</option>
+                <option value="Marzo">Marzo</option>
+                <option value="Abril">Abril</option>
+                <option value="Mayo">Mayo</option>
+                <option value="Junio">Junio</option>
+                <option value="Julio">Julio</option>
+                <option value="Agosto">Agosto</option>
+                <option value="Septiembre">Septiembre</option>
+                <option value="Octubre">Octubre</option>
+                <option value="Noviembre">Noviembre</option>
+                <option value="Diciembre">Diciembre</option>
+            </select>
+        </div>
+        <div class="col-md-1 col-sm-12 mt-2">
+            <label for="selectBox text"><strong>Año:</strong></label>
+        </div>
+        <div class="col-md-2 col-sm-12 mt-2">
+            <input type="number" id="anio" name="anioF" placeholder="- - Selección - -" required>
+        </div>
+
+        <!-- col 5 -->
+        <div class="col-md-3 col-sm-12 mt-2">
+            <label for="selectBox text"><strong>Fecha de salida:</strong></label>
+        </div>
+        <div class="col-md-1 col-sm-12 mt-2">
+            <label for="selectBox text"><strong>Dia:</strong></label>
+        </div>
+        <div class="col-md-2 col-sm-12 mt-2">
+            <select class="form-select" aria-label="Default select example">
+                <option selected>- - Selección - -</option>
+                <option value="Uno">1</option>
+                <option value="Dos">2</option>
+                <option value="Tres">3</option>
+                <option value="Cuatro">4</option>
+                <option value="Cinco">5</option>
+                <option value="Seis">6</option>
+                <option value="Siete">7</option>
+                <option value="Ocho">8</option>
+                <option value="Nueve">9</option>
+                <option value="Diez">10</option>
+                <option value="Once">11</option>
+                <option value="Doce">12</option>
+                <option value="Trece">13</option>
+                <option value="Catorce">14</option>
+                <option value="Quince">15</option>
+                <option value="Dieciseis">16</option>
+                <option value="Diecisiete">17</option>
+                <option value="Dieciocho">18</option>
+                <option value="Diecinueve">19</option>
+                <option value="Veinte">20</option>
+                <option value="Veintiuno">21</option>
+                <option value="Veintidos">22</option>
+                <option value="Veintitres">23</option>
+                <option value="Veinticuatro">24</option>
+                <option value="Veinticinco">25</option>
+                <option value="Veintiseis">26</option>
+                <option value="Veintisiete">27</option>
+                <option value="Veintiocho">28</option>
+                <option value="Veintinueve">29</option>
+                <option value="Treinta">30</option>
+                <option value="Treintaiuno">31</option>
+            </select>
+        </div>
+        <div class="col-md-1 col-sm-12 mt-2">
+            <label for="selectBox text"><strong>Mes:</strong></label>
+        </div>
+        <div class="col-md-2 col-sm-12 mt-2">
+            <select class="form-select" aria-label="Default select example">
+                <option selected>- - Selección - -</option>
+                <option value="Enero">Enero</option>
+                <option value="Febrero">Febrero</option>
+                <option value="Marzo">Marzo</option>
+                <option value="Abril">Abril</option>
+                <option value="Mayo">Mayo</option>
+                <option value="Junio">Junio</option>
+                <option value="Julio">Julio</option>
+                <option value="Agosto">Agosto</option>
+                <option value="Septiembre">Septiembre</option>
+                <option value="Octubre">Octubre</option>
+                <option value="Noviembre">Noviembre</option>
+                <option value="Diciembre">Diciembre</option>
+            </select>
+        </div>
+        <div class="col-md-1 col-sm-12 mt-2">
+            <label for="selectBox text"><strong>Año:</strong></label>
+        </div>
+        <div class="col-md-2 col-sm-12 mt-2">
+            <input type="number" id="anio" name="anioF" placeholder="- - Selección - -" required>
+        </div>
+
+
+        <div class="col-md-12 col-sm-12 mt-2">
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Lotes: </span>
+                <input type="text" class="form-control" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-default">
+            </div>
+        </div>
+
+
+        <!-- col 6 -->
+        <div class="col-md-6 col-sm-12 mt-2 input-container">
+            <button type="button" class="btn btn-primary">Generar análisis</button>
+        </div>
+    </div>
+</div>
