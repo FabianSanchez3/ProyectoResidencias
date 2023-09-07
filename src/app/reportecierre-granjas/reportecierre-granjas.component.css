@@ -40,7 +40,7 @@
     .container {
         min-height: auto; /* Restablece la altura del contenedor para que se ajuste automáticamente */
         text-align: left;
-        height: 150vh;
+        height: 100vh;
     }
 
     /* Estilos para los elementos de etiqueta en pantallas pequeñas */
