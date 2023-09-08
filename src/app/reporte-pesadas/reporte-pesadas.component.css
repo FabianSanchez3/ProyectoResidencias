@@ -11,6 +11,13 @@
     font-weight: 600;
   }
 
+  .logo {
+    width: 60px; /* Ajusta el ancho de tu imagen */
+    height: auto;/* Mantén la proporción original */
+    margin-left: 3%;
+
+}
+
 
   .container {
     display: flex;
