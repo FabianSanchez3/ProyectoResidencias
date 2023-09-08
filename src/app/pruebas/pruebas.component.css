@@ -25,7 +25,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 88vh;
+    height: 200vh;
   }
 
   .btn {
@@ -39,6 +39,18 @@
     text-align: center;
     padding: 10px 20px;
     line-height: 12px;
+  }
+
+
+  td{
+    border: 1px solid black;
+    padding: 10px;
+  }
+  button{
+    background: black;
+    padding: 10px;
+    color: white;
+    margin-bottom: 50px;
   }
   
   /* Estilos para pantallas pequeñas (menos de 768px de ancho) */
