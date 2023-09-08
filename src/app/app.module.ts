@@ -14,6 +14,7 @@ import { ReporteConsumosComponent } from './reporte-consumos/reporte-consumos.co
 import { ReportecierreGranjasComponent } from './reportecierre-granjas/reportecierre-granjas.component';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
+import { PruebasComponent } from './pruebas/pruebas.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ ReporteMortalidadesComponent,
 ReportePesadasComponent,
 ReporteConsumosComponent,
 ReportecierreGranjasComponent,
+PruebasComponent,
 
 ],
   imports: [
