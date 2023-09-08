@@ -11,7 +11,14 @@
     color: white;
     font-weight: 600;
   }
-  
+
+  .logo {
+    width: 60px; /* Ajusta el ancho de tu imagen */
+    height: auto;/* Mantén la proporción original */
+    margin-left: 3%;
+
+}
+
   .container {
     display: flex;
     justify-content: center;
@@ -32,14 +39,14 @@
     padding: 10px 20px;
     line-height: 12px;
   }
-  
+
   /* Estilos para pantallas pequeñas (menos de 768px de ancho) */
   @media (max-width: 767px) {
     .toolbar {
       height: 40px; /* Reduce la altura de la barra de herramientas */
       font-size: 14px; /* Reduce el tamaño de fuente para el texto */
     }
-  
+
     .container {
       height: 80vh; /* Reduce la altura del contenedor */
       justify-content: center;

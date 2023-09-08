@@ -11,6 +11,13 @@
   font-weight: 600;
 }
 
+.logo {
+  width: 60px; /* Ajusta el ancho de tu imagen */
+  height: auto;/* Mantén la proporción original */
+  margin-left: 3%;
+
+}
+
 .container {
   display: flex;
   justify-content: center;
@@ -108,7 +115,8 @@
   }
 
   .container {
-    height: 76vh; /* Reduce la altura del contenedor */
+ 
+   height: 76vh; /* Reduce la altura del contenedor */
     justify-content: center;
     text-align: left;
     align-items: center;

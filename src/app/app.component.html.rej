@@ -1,0 +1,9 @@
+diff a/src/app/app.component.html b/src/app/app.component.html	(rejected hunks)
+@@ -0,6 +0,7 @@
+     color: #333;
+     box-sizing: border-box;
+     -webkit-font-smoothing: antialiased;
++    -moz-osx-font-smoothing: grayscale;
+   }
+
+
