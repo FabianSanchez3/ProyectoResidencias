@@ -1,6 +1,5 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';  
 import jsPDF from 'jspdf';
-import 'jspdf-autotable';
 import * as XLSX from 'xlsx';
 
 
