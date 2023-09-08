@@ -6,6 +6,7 @@ import { ReporteConsumosComponent } from './reporte-consumos/reporte-consumos.co
 import { ReporteMortalidadesComponent } from './reporte-mortalidades/reporte-mortalidades.component';
 import { ReportePesadasComponent } from './reporte-pesadas/reporte-pesadas.component';
 import { ReportecierreGranjasComponent } from './reportecierre-granjas/reportecierre-granjas.component';
+import {PruebasComponent} from './pruebas/pruebas.component';
 
 const routes: Routes = [
 
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'mortalidades', component: ReporteMortalidadesComponent},
   { path: 'pesadas', component: ReportePesadasComponent},
   { path: 'cgranjas', component: ReportecierreGranjasComponent},
+  { path: 'pruebas', component: PruebasComponent},
 ];
 
 
