@@ -3,18 +3,43 @@
   <img src="./assets/Nu3-logo@2x_1.png" alt="Logo" class="logo">
 </div>
 
+<section class="vh-100" style="background-color: #ffffff;">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="card shadow-2-strong" style="border-radius: 1rem;">
+          <div class="card-body p-5 text-center">
 
-    <div class="login-container">
-      <form class="login-form">
-        <h2 >Acceso de Usuarios</h2>
-        <div class="form-group">
-          <label for="username">Correo:</label>
-          <input type="text" id="username" name="username" placeholder="Nombre de usuario" required>
+            <div class="logo2">
+              <img src="./assets\Logo-Grupo-Nu3.png" alt="Logo" class="logo">
+            </div>
+
+
+            <h3 class="mb-5">Acceso de Usuarios</h3>
+
+            <div class="form-outline mb-4">
+              <input type="email" id="typeEmailX-2" class="form-control form-control-lg" />
+              <label class="form-label" for="typeEmailX-2">Correo</label>
+            </div>
+
+            <div class="form-outline mb-4">
+              <input type="password" id="typePasswordX-2" class="form-control form-control-lg" />
+              <label class="form-label" for="typePasswordX-2">Contraseña</label>
+            </div>
+
+            <!-- Checkbox -->
+            <div class="form-check d-flex justify-content-start mb-4">
+              <input class="form-check-input" type="checkbox" value="" id="form1Example3" />
+              <label class="form-check-label" for="form1Example3"> Recordar Contraseña </label>
+            </div>
+
+            <button class="btn btn-primary btn-lg btn-block" type="submit" routerLink="/menu">Iniciar Sesion</button>
+
+            <hr class="my-4">
+
+          </div>
         </div>
-        <div class="form-group">
-          <label for="password">Contraseña:</label>
-          <input type="password" id="password" name="password" placeholder="Contraseña" required>
-        </div>
-        <button type="submit" routerLink="/menu">Iniciar sesión</button>
-      </form>
+      </div>
     </div>
+  </div>
+</section>
