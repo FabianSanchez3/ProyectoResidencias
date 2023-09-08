@@ -104,18 +104,17 @@
 
         <!-- col 6 -->
         <div class="col-md-4 col-sm-12 mt-2">
-            <button type="button" class="btn btn-primary">PDF</button>
+            <button type="button" class="btn btn-primary" (click)="generatePDF()">PDF</button>
         </div>
         <div class="col-md-4 col-sm-12 mt-2">
         </div>
         <div class="col-md-4 col-sm-12 mt-2">
-            <button type="button" class="btn btn-primary">XLS</button>
+            <button type="button" class="btn btn-primary" (click)="exportToExcel()">XLS</button>
         </div>
 
         <!-- col 6 -->
         <div class="col-md-6 col-sm-12 mt-2">
             <div>
-                <button (click)="exportToExcel()">Export to Excel</button>
                 <table id="season-tble">
                   <tr>
                     <th>Id</th>
@@ -131,8 +130,6 @@
               </div>
         </div>
         <div class="col-md-6 col-sm-12 mt-2">
-            <button (click)="generatePDF()">Generar PDF</button>
-            
         </div>
 
     </div>
