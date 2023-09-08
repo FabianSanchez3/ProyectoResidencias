@@ -1,5 +1,6 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';  
 import jsPDF from 'jspdf';
+import 'jspdf-autotable';
 import * as XLSX from 'xlsx';
 
 
@@ -15,6 +16,7 @@ export class PruebasComponent {
   ngOnInit(): void {
   }
 
+  // Generacon de pdf
   generatePDF() {
     const doc = new jsPDF();
     doc.text('¡Hola, mundo!', 10, 10);
@@ -22,6 +24,7 @@ export class PruebasComponent {
   }
 
 
+  // Generacon de XLS
   Seasons = [
     { id: 1, name: 'Spring', fruit: 'Orange' },
     { id: 2, name: 'Summer', fruit: 'Mango' },
@@ -29,7 +32,7 @@ export class PruebasComponent {
     { id: 4, name: 'Autumn', fruit: 'Banana' },
   ];
 
-  name = 'ExcelSheet.xlsx';
+  name = 'Reporte.xls';
   exportToExcel(): void {
     let element = document.getElementById('season-tble');
     const worksheet: XLSX.WorkSheet = XLSX.utils.table_to_sheet(element);
