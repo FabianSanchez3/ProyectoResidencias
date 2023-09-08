@@ -15,6 +15,9 @@
   .logo {
     width: 50px; /* Ajusta el ancho de tu imagen */
     height: auto; /* Mantén la proporción original */
+    margin-left: 2vh; /* Margen izquierdo automático */
+    margin-right: auto; /* Margen derecho automático */
+    display: block; /* Para que los márgenes automáticos funcionen correctamente */
 }
 
   
@@ -24,7 +27,6 @@
     align-items: center;
     height: 88vh;
   }
-
 
   .btn {
     color: white;
@@ -45,6 +47,14 @@
       height: 40px; /* Reduce la altura de la barra de herramientas */
       font-size: 14px; /* Reduce el tamaño de fuente para el texto */
     }
+  
+    .logo {
+      width: 40px; /* Ajusta el ancho de tu imagen */
+      height: 40px; /* Mantén la proporción original */
+      margin-left: 2vh; /* Margen izquierdo automático */
+      margin-right: auto; /* Margen derecho automático */
+      display: block; /* Para que los márgenes automáticos funcionen correctamente */
+  }
   
     .container {
       height: 80vh; /* Reduce la altura del contenedor */
