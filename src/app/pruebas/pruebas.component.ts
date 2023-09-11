@@ -21,7 +21,7 @@ export class PruebasComponent {
   selectedDate: string = ''; // Propiedad para almacenar la fecha seleccionada (formato YYYY-MM-DD)
 
   mostrarFecha() {
-    console.log('Fecha seleccionada:', this.selectedDate);
+    console.log('Fecha:', this.selectedDate);
   }
 
   mostrarfechaseleccionada() {
