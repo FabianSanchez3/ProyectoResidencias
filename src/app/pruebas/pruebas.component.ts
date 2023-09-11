@@ -24,16 +24,16 @@ export class PruebasComponent {
 
 
   // Generacon de XLS
-  Seasons = [
-    { id: 1, name: 'Spring', fruit: 'Orange' },
-    { id: 2, name: 'Summer', fruit: 'Mango' },
-    { id: 3, name: 'Winter', fruit: 'Apple' },
-    { id: 4, name: 'Autumn', fruit: 'Banana' },
+  Inventario = [
+    { id: 1, name: 'ReporteInventario', tipo: 'Uno' },
+    { id: 2, name: 'ReportePesadas', tipo: 'Dos' },
+    { id: 3, name: 'ReporteConsumos', tipo: 'Tres' },
+    { id: 4, name: 'ReporteGranjas', tipo: 'Cuatro' },
   ];
 
   name = 'Reporte.xls';
   exportToExcel(): void {
-    let element = document.getElementById('season-tble');
+    let element = document.getElementById('inv-tble');
     const worksheet: XLSX.WorkSheet = XLSX.utils.table_to_sheet(element);
 
     const book: XLSX.WorkBook = XLSX.utils.book_new();

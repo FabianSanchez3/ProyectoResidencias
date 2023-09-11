@@ -26,6 +26,7 @@
   /* Centrado vertical */
   height: 88vh;
   /* Altura del 100% de la ventana gráfica */
+  
 }
 
 .container2 {
@@ -36,6 +37,7 @@
   /* Centrado vertical */
   height: 38vh;
   /* Altura del 100% de la ventana gráfica */
+ 
 }
 
 
@@ -45,6 +47,7 @@
   justify-content: center;
   gap: 20px;
   /* Espacio entre tarjetas */
+
 }
 
 .card {
@@ -72,6 +75,12 @@
   /* Opcional: cambia el color de fondo de la tarjeta */
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   /* Agrega la sombra a la tarjeta */
+
+}
+
+.card-title{
+  height: 8vh;
+  font-size: 18px;
 }
 
 .card-body {
@@ -79,6 +88,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+
 }
 
 .card:hover {
@@ -121,4 +131,11 @@
     text-align: left;
     align-items: center;
   }
+}
+
+
+
+.card-title{
+  height: 8vh;
+  font-size: 15px;
 }
