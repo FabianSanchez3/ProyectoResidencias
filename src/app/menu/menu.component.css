@@ -126,17 +126,25 @@
 
   .container {
  
-   height: 76vh; /* Reduce la altura del contenedor */
+   height: 70vh; /* Reduce la altura del contenedor */
     justify-content: center;
     text-align: left;
     align-items: center;
   }
 
-
-
-
+  .container2 {
+    display: flex;
+    justify-content: center;
+    /* Centrado horizontal */
+    align-items: center;
+    /* Centrado vertical */
+    height: 45vh;
+    /* Altura del 100% de la ventana gráfica */
+   
+  }
+  
   .card-title{
-    height: 8vh;
+    height: 10vh;
     font-size: 15px;
   }
   
@@ -162,7 +170,53 @@
     
   }
 
+  /* Estilos para pantallas con un ancho entre 1024px y 1365px (computadoras portátiles) */
+  @media (min-width: 540px) and (max-width: 1368px) {
+    /* Define tus estilos aquí */
+    .container {
+      height: 5vh; /* Reduce la altura del contenedor */
+      justify-content: center;
+      text-align: left;
+      align-items: center;
+    }
+  }
 
+  .container2 {
+    display: flex;
+    justify-content: center;
+    /* Centrado horizontal */
+    align-items: center;
+    /* Centrado vertical */
+    height: 5vh;
+    /* Altura del 100% de la ventana gráfica */
+   
+  }
 }
+
+
+  @media (min-width: 414px) and (max-width: 896px) {
+    /* Define tus estilos aquí */
+    .container {
+      height: 55vh; /* Reduce la altura del contenedor */
+      justify-content: center;
+      text-align: left;
+      align-items: center;
+    }
+  }
+
+  .container2 {
+    display: flex;
+    justify-content: center;
+    /* Centrado horizontal */
+    align-items: center;
+    /* Centrado vertical */
+    height: 30vh;
+    /* Altura del 100% de la ventana gráfica */
+   
+  }
+
+
+
+
 
 
