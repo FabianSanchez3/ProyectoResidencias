@@ -34,7 +34,7 @@ export class PruebasComponent {
     const worksheet: XLSX.WorkSheet = XLSX.utils.table_to_sheet(element);
 
     const book: XLSX.WorkBook = XLSX.utils.book_new();
-    XLSX.utils.book_append_sheet(book, worksheet, 'Sheet1');
+    XLSX.utils.book_append_sheet(book, worksheet, 'book');
 
     XLSX.writeFile(book, this.name);
   }

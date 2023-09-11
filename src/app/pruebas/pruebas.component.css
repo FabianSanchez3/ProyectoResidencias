@@ -69,7 +69,7 @@
   }
   
     .container {
-      height: 135vh; /* Reduce la altura del contenedor */
+      height: 140vh; /* Reduce la altura del contenedor */
       justify-content: center;
       text-align: left;
       align-items: center;

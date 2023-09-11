@@ -8,17 +8,18 @@
 <!-- jsPDF library -->
 <script src="js/jsPDF/dist/jspdf.min.js"></script>
 
+
 <!-- toolbar -->
 <div class="toolbar" role="banner">
     <img src="./assets/Nu3-logo@2x_1.png" alt="Logo" class="logo">
   </div>
 
-  
+
 <!-- Contenedor principal -->
 <div class="container mt-4">
     <div class="row">
 
-        <!-- Col 1-->
+        <!-- Col 1 -->
         <div class="col-md-4 col-sm-12 mt-2">
         </div>
         <div class="col-4 text-center">
@@ -27,7 +28,7 @@
         <div class="col-md-4 col-sm-12 mt-2">
         </div>
 
-        <!-- col2  -->
+        <!-- col 2 -->
         <div class="col-md-4 col-sm-12 mt-2">
             <label for="selectBox text"><strong>Empresa:</strong></label>
         </div>
@@ -109,7 +110,7 @@
         <div class="col-md-12 col-sm-12 mt-2">
         </div>
 
-        <!-- col 6 -->
+        <!-- col 7 -->
         <div class="col-md-4 col-sm-12 mt-2">
             <button type="button" class="btn btn-primary" (click)="generarPDF()">PDF</button>
         </div>
@@ -119,7 +120,7 @@
             <button type="button" class="btn btn-primary" (click)="exportToExcel()">XLS</button>
         </div>
 
-        <!-- col 6 -->
+        <!-- col 8 -->
         <div class="col-md-4 col-sm-12 mt-2">
         </div>
         <div class="col-md-4 col-sm-12 mt-2">
@@ -134,7 +135,6 @@
                     <td>{{ inventario.id }}</td>
                     <td>{{ inventario.name }}</td>
                     <td>{{ inventario.tipo }}</td>
-                    <td>{{inventario.id}}</td>
                   </tr>
                 </table>
               </div>
