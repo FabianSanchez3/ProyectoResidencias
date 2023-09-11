@@ -61,3 +61,15 @@
   height: 40px; /* Cambia la altura según tus necesidades */
   /* Puedes ajustar otros estilos según tus preferencias */
 }
+
+
+/* Estilos para pantallas con un ancho entre 1024px y 1365px (computadoras portátiles) */
+@media (min-width: 360px) and (max-width: 1365px) {
+  /* Define tus estilos aquí */
+  .container {
+    height: 80vh; /* Reduce la altura del contenedor */
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+  }
+}

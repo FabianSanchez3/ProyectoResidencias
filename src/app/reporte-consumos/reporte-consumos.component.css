@@ -60,3 +60,15 @@
   .demo-inline-calendar-card {
     width: 300px;
   }
+
+
+  /* Estilos para pantallas con un ancho entre 1024px y 1365px (computadoras portátiles) */
+@media (min-width: 360px) and (max-width: 1365px) {
+  /* Define tus estilos aquí */
+  .container {
+    height: 100vh; /* Reduce la altura del contenedor */
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+  }
+}

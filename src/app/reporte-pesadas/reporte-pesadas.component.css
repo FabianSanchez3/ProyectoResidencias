@@ -48,9 +48,43 @@
     }
 
     .container {
-      height: 80vh; /* Reduce la altura del contenedor */
+      height: 76vh; /* Reduce la altura del contenedor */
       justify-content: center;
       text-align: left;
       align-items: center;
     }
   }
+
+/* Estilos para pantallas con un ancho entre 768px y 1023px (tabletas y dispositivos similares) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Define tus estilos aquí */
+  .container {
+    height: 76vh; /* Reduce la altura del contenedor */
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+  }
+}
+
+
+
+/* Estilos para pantallas con un ancho entre 1024px y 1365px (computadoras portátiles) */
+@media (min-width: 360px) and (max-width: 1365px) {
+  /* Define tus estilos aquí */
+  .container {
+    height: 70vh; /* Reduce la altura del contenedor */
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+  }
+}
+
+
+
+/* Estilos para pantallas con un ancho mayor o igual a 1366px (computadoras de escritorio) */
+/* @media (min-width: 1366px) { */
+  /* Define tus estilos aquí */
+  
+/* } */
+
+
