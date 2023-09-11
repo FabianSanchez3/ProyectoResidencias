@@ -1,9 +1,9 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
-import jsPDF from 'jspdf';
+
 import * as XLSX from 'xlsx';
-
 import 'jspdf-autotable';
-
+import jsPDF from 'jspdf';
+import autoTable from 'jspdf-autotable';
 
 
 @Component({
@@ -15,11 +15,9 @@ export class PruebasComponent {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(){
   }
 
-
-  // Informacion a exportar
   Inventario = [
     { id: 1, name: 'ReporteInventario', tipo: 'Uno' },
     { id: 2, name: 'ReportePesadas', tipo: 'Dos' },
@@ -27,7 +25,6 @@ export class PruebasComponent {
     { id: 4, name: 'ReporteGranjas', tipo: 'Cuatro' },
     { id: 5, name: 'Reporte', tipo: 'Cinco' },
   ];
-
   //Generar XLS
   name = 'Reporte.xls';
   exportToExcel(): void {
@@ -43,39 +40,18 @@ export class PruebasComponent {
 
   //Generar PDF
   generarPDF(): void {
-    // Crear un nuevo documento PDF
+
     const doc = new jsPDF();
 
-    // Definir la posición inicial para el contenido
-    let y = 10;
+    // Define las opciones de la tabla
+   
+    autoTable(doc, {
+      head: [['Id', 'Name', 'Tipo']],
+      body: this.Inventario.map(item => [item.id, item.name, item.tipo]),
+      didDrawCell: (data) => { },
+  });
 
-    // Agregar encabezado
-    doc.setFontSize(16);
-    doc.text('Reporte de Inventario', 10, y);
-    y += 10; // Incrementar la posición en Y
-
-    // Crear una tabla manualmente
-    const headers = ['ID', 'Nombre', 'Tipo'];
-    const data = this.Inventario.map((item) => [item.id.toString(), item.name.toString(), item.tipo.toString()]);
-
-    // Definir el ancho de las columnas
-    const colWidths = [10,10,20];
-
-    // Agregar encabezados
-    doc.setFontSize(12);
-    doc.text(headers.join('\t'), 10, y);
-    y += 10; // Incrementar la posición en Y
-
-    // Agregar datos de la tabla
-    doc.setFontSize(10);
-    data.forEach((row) => {
-      for (let i = 0; i < row.length; i++) {
-        doc.text(row[i], 10 + i * colWidths[i], y);
-      }
-      y += 10; // Incrementar la posición en Y para la siguiente fila
-    });
-
-    // Guardar el archivo PDF
+    // Guarda el archivo PDF
     doc.save('ReporteInventario.pdf');
   }
 }
