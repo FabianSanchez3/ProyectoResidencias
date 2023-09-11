@@ -1,16 +1,16 @@
 /* Estilos para pantallas grandes */
 .toolbar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    background-color: #92002d;
-    color: white;
-    font-weight: 600;
-  }
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #92002d;
+  color: white;
+  font-weight: 600;
+}
 
   .logo {
     width: 50px; /* Ajusta el ancho de tu imagen */

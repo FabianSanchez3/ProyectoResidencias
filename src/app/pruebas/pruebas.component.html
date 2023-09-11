@@ -2,15 +2,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/2.3.5/jspdf.plugin.autotable.js"></script>
 <!-- jQuery library -->
 <script src="js/jquery.min.js"></script>
 <!-- jsPDF library -->
 <script src="js/jsPDF/dist/jspdf.min.js"></script>
 
+<!-- toolbar -->
 <div class="toolbar" role="banner">
-  <img src="./assets/Nu3-logo@2x_1.png" alt="Logo" class="logo">
-</div>
+    <img src="./assets/Nu3-logo@2x_1.png" alt="Logo" class="logo">
+  </div>
 
+  
 <!-- Contenedor principal -->
 <div class="container mt-4">
     <div class="row">
@@ -108,7 +111,7 @@
 
         <!-- col 6 -->
         <div class="col-md-4 col-sm-12 mt-2">
-            <button type="button" class="btn btn-primary" (click)="generatePDF()">PDF</button>
+            <button type="button" class="btn btn-primary" (click)="generarPDF()">PDF</button>
         </div>
         <div class="col-md-4 col-sm-12 mt-2">
         </div>
@@ -131,6 +134,7 @@
                     <td>{{ inventario.id }}</td>
                     <td>{{ inventario.name }}</td>
                     <td>{{ inventario.tipo }}</td>
+                    <td>{{inventario.id}}</td>
                   </tr>
                 </table>
               </div>

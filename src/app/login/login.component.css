@@ -18,12 +18,15 @@
 
 }
 
+
+
 .logo2 {
   width: 6%; /* Ajusta el ancho de tu imagen */
   height: auto;/* Mantén la proporción original */
   margin-left: 37%;
 
 }
+
 
 .example-container mat-form-field + mat-form-field {
   margin-left: 8px;
@@ -41,4 +44,6 @@ button {
   padding: 0.5rem 1rem;
   width: 200px;
   margin: 0 auto;
+
+
 }
