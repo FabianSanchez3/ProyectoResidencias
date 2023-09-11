@@ -1,9 +1,9 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
-
 import * as XLSX from 'xlsx';
 import 'jspdf-autotable';
 import jsPDF from 'jspdf';
 import autoTable from 'jspdf-autotable';
+import { FormsModule } from '@angular/forms';
 
 
 @Component({
@@ -15,7 +15,24 @@ export class PruebasComponent {
 
   constructor() { }
 
-  ngOnInit(){
+  ngOnInit() {
+  }
+
+  selectedDate: string = ''; // Propiedad para almacenar la fecha seleccionada (formato YYYY-MM-DD)
+
+  mostrarFecha() {
+    console.log('Fecha seleccionada:', this.selectedDate);
+  }
+
+  mostrarfechaseleccionada() {
+    console.log('Fecha seleccionada:', this.selectedDate);
+  }
+
+
+  selectedOption: string = ''; // Propiedad para almacenar la opción seleccionada
+
+  mostrarSeleccion() {
+    console.log('Opción seleccionada:', this.selectedOption);
   }
 
   Inventario = [
@@ -25,42 +42,45 @@ export class PruebasComponent {
     { id: 4, name: 'ReporteGranjas', tipo: 'Cuatro' },
     { id: 5, name: 'Reporte', tipo: 'Cinco' },
   ];
-  //Generar XLS
-  name = 'Reporte.xls'; // Nombre del archivo Excel que se generará.
 
+
+  //Generar XLS
   exportToExcel(): void {
-    // Obtén una referencia al elemento de la tabla por su ID.
-    let element = document.getElementById('inv-tble');
-    
-    // Convierte la tabla HTML en un objeto WorkSheet de Excel utilizando XLSX.
-    const worksheet: XLSX.WorkSheet = XLSX.utils.table_to_sheet(element);
-    
-    // Crea un nuevo libro de Excel (WorkBook).
-    const book: XLSX.WorkBook = XLSX.utils.book_new();
-    
-    // Agrega la hoja de trabajo (WorkSheet) al libro de Excel con un nombre ("book").
-    XLSX.utils.book_append_sheet(book, worksheet, 'book');
-    
-    // Guarda el libro de Excel en un archivo con el nombre especificado.
-    XLSX.writeFile(book, this.name);
+    // Paso 1: Convierte la matriz Inventario en una hoja de trabajo de Excel (WorkSheet).
+    const ws: XLSX.WorkSheet = XLSX.utils.json_to_sheet(this.Inventario);
+  
+    // Paso 2: Crea un nuevo libro de Excel (WorkBook).
+    const wb: XLSX.WorkBook = XLSX.utils.book_new();
+  
+    // Paso 3: Agrega la hoja de trabajo al libro con un nombre específico ('Inventario' en este caso).
+    XLSX.utils.book_append_sheet(wb, ws, 'Inventario');
+  
+    // Paso 4: Guarda el archivo Excel con un nombre especificado ('Inventario.xlsx' en este caso).
+    XLSX.writeFile(wb, 'InventarioExcell.xlsx');
   }
   
+
 
   //Generar PDF
   generarPDF(): void {
     // Crea un nuevo objeto jsPDF.
     const doc = new jsPDF();
-  
+
     // Define las opciones de la tabla utilizando la función autoTable de jsPDF-AutoTable.
     autoTable(doc, {
       head: [['Id', 'Name', 'Tipo']], // Encabezado de la tabla.
       body: this.Inventario.map(item => [item.id, item.name, item.tipo]), // Datos de la tabla.
+      didDrawCell: (data) => { }, // Función opcional que se ejecuta después de dibujar una celda.
     });
-  
+
     // Guarda el archivo PDF con un nombre especificado ('ReporteInventario.pdf' en este caso).
-    doc.save('ReporteInventario.pdf');
+    doc.save('ReporteInventarioPDF.pdf');
   }
-  
+
+
+
+
+
 }
 
 

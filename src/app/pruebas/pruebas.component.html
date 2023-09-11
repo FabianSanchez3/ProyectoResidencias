@@ -33,8 +33,7 @@
             <label for="selectBox text"><strong>Empresa:</strong></label>
         </div>
         <div class="col-md-8 col-sm-12 mt-2">
-            <select class="form-select" aria-label="Default select example">
-                <option selected>- - Selección - -</option>
+            <select class="form-select" aria-label="Default select example" name="selectOption" (click)="mostrarSeleccion()" [(ngModel)]="selectedOption">
                 <option value="Op1-Empresa">Op 1</option>
                 <option value="Op2-Empresa">Op 2</option>
                 <option value="Op3-Empresa">Op 3</option>
@@ -94,7 +93,7 @@
         </div>
 
         <div class="col-md-8 col-sm-12 mt-2">
-            <input type="date" class="custom-date-input" />
+            <input type="date" class="custom-date-input" name="datePicker" [(ngModel)]="selectedDate" (change)="mostrarFecha()" (click)="mostrarfechaseleccionada()"/>
         </div>
 
         <!-- col 5 -->
@@ -125,18 +124,24 @@
         </div>
         <div class="col-md-4 col-sm-12 mt-2">
             <div>
+
                 <table id="inv-tble">
-                  <tr>
-                    <th>Id</th>
-                    <th>Name</th>
-                    <th>Tipo</th>
-                  </tr>
-                  <tr *ngFor="let inventario of Inventario">
-                    <td>{{ inventario.id }}</td>
-                    <td>{{ inventario.name }}</td>
-                    <td>{{ inventario.tipo }}</td>
-                  </tr>
-                </table>
+                    <!-- Encabezado de la tabla -->
+                    <tr>
+                      <th>Id</th>
+                      <th>Name</th>
+                      <th>Tipo</th>
+                    </tr>
+                  
+                    <!-- Ciclo *ngFor para iterar a través de los elementos de Inventario y crear filas de datos -->
+                    <tr *ngFor="let inventario of Inventario">
+                      <!-- Celdas de datos para cada propiedad de inventario -->
+                      <td>{{ inventario.id }}</td>
+                      <td>{{ inventario.name }}</td>
+                      <td>{{ inventario.tipo }}</td>
+                    </tr>
+                  </table>
+                  
               </div>
         </div>
         <div class="col-md-4 col-sm-12 mt-2">
