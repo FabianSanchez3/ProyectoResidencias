@@ -131,11 +131,38 @@
     text-align: left;
     align-items: center;
   }
+
+
+
+
+  .card-title{
+    height: 8vh;
+    font-size: 15px;
+  }
+  
+  .card img {
+    width: 140px;
+    /* ancho */
+    height: 200px;
+    /* largo */
+  }
+  
+  .btn {
+    color: white;
+    background-color: #92002d;
+    width: 150px;
+    /* Cambia el ancho según tus necesidades */
+    height: 40px;
+    /* Cambia la altura según tus necesidades */
+    font-size: 24px;
+    text-align: center;
+    padding: 10px 20px;
+    line-height: 12px;
+  
+    
+  }
+
+
 }
 
 
-
-.card-title{
-  height: 8vh;
-  font-size: 15px;
-}
