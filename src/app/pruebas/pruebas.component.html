@@ -1,18 +1,24 @@
+<!--background-->
+<div class="box">
+  <h2>Background Colors</h2>
+  <p>Try changing the background <span>colors</span>.</p>
+</div>
+
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/2.3.5/jspdf.plugin.autotable.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/2.3.5/jspdf.plugin.autotable.js"></script>
 <!-- jQuery library -->
 <script src="js/jquery.min.js"></script>
 <!-- jsPDF library -->
 <script src="js/jsPDF/dist/jspdf.min.js"></script>
 
-
 <!-- toolbar -->
 <div class="toolbar" role="banner">
     <img src="./assets/Nu3-logo@2x_1.png" alt="Logo" class="logo">
   </div>
+
 
 
 <!-- Contenedor principal -->
@@ -133,7 +139,7 @@
                       <th>Name</th>
                       <th>Tipo</th>
                     </tr>
-                  
+
                     <!-- Ciclo *ngFor para iterar a través de los elementos de Inventario y crear filas de datos -->
                     <tr *ngFor="let inventario of Inventario">
                       <!-- Celdas de datos para cada propiedad de inventario -->
@@ -142,7 +148,7 @@
                       <td>{{ inventario.tipo }}</td>
                     </tr>
                   </table>
-                  
+
               </div>
         </div>
         <div class="col-md-4 col-sm-12 mt-2">
