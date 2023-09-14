@@ -1,3 +1,4 @@
+
 /* Estilos para pantallas grandes */
 .toolbar {
   position: absolute;
@@ -8,10 +9,13 @@
   display: flex;
   align-items: center;
   background-color: #92002d;
-  color: white;
+  color: rgb(255, 255, 255);
   font-weight: 600;
 }
 
+.box {
+  background-color: #92002d;
+}
   .logo {
     width: 50px; /* Ajusta el ancho de tu imagen */
     height: auto; /* Mantén la proporción original */
@@ -20,12 +24,13 @@
     display: block; /* Para que los márgenes automáticos funcionen correctamente */
 }
 
-  
+
   .container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 120vh;
+    font-family: 'Lato', sans-serif;
   }
 
   .btn {
@@ -39,6 +44,7 @@
     text-align: center;
     padding: 10px 20px;
     line-height: 12px;
+    font-family: 'Lato', sans-serif;
   }
 
 
@@ -52,14 +58,14 @@
     color: white;
     margin-bottom: 50px;
   }
-  
+
   /* Estilos para pantallas pequeñas (menos de 768px de ancho) */
   @media (max-width: 767px) {
     .toolbar {
       height: 40px; /* Reduce la altura de la barra de herramientas */
       font-size: 14px; /* Reduce el tamaño de fuente para el texto */
     }
-  
+
     .logo {
       width: 40px; /* Ajusta el ancho de tu imagen */
       height: 40px; /* Mantén la proporción original */
@@ -67,7 +73,7 @@
       margin-right: auto; /* Margen derecho automático */
       display: block; /* Para que los márgenes automáticos funcionen correctamente */
   }
-  
+
     .container {
       height: 140vh; /* Reduce la altura del contenedor */
       justify-content: center;
