@@ -7,30 +7,22 @@ import { UserService } from '../services/user.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  onLoginForm!: FormGroup;
+  Login: any
+
 
   constructor(
     private formBuilder: FormBuilder,
-    private userService: UserService
+    private userService: UserService,
   ) { }
 
-  ngOnInit() {
-    this.onLoginForm = this.formBuilder.group({
-      'email': [null, Validators.compose([
-        Validators.required
-      ])],
-      'password': [null, Validators.compose([
-        Validators.required
-      ])]
+  ngOnInit(): void {
+    this.getUsers();
+  }
+
+  getUsers() {
+    this.userService.getData().subscribe((res: any) => {
+      console.log(res)
     });
   }
-  doCheck() {
-    this.userService.loginUser(this.onLoginForm.value).subscribe((data: any) => {
-      if (Object.is(data, null)) {
-        window.alert("El correo o la contraseña son incorrectos")
-      } else {
-        window.alert("las credenciales son validas")
-      }
-    })
-  }
+
 }
