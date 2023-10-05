@@ -1,22 +1,27 @@
 import { Injectable } from '@angular/core';
-import { environment } from 'src/environments/environment';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders} from '@angular/common/http';
+
+import { Observable, throwError } from 'rxjs';
+import { catchError } from 'rxjs/operators';
+
 
 
 @Injectable({
   providedIn: 'root'
 })
 export class UserService {
-  url= environment.api;
 
-  constructor(public http:HttpClient) {
+  private apiURL = "http://http://127.0.0.1:8000/api";
 
-  }
+  httpOptions = {
+    headers: new HttpHeaders({
+      'Content-Type': 'application/json'
+    })
+ }
 
-  loginUser(form:any){
-    let request
-    return this.http.post(this.url+'/users/login',form)
-  }
+  constructor(private httpClient: HttpClient) { }
 
-}
+ }
+
+
 
