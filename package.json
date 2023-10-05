@@ -28,6 +28,7 @@
     "jquery": "^3.7.1",
     "jspdf": "^2.5.1",
     "jspdf-autotable": "^3.6.0",
+    "ng-angular-popup": "^0.4.7",
     "ngx-bootstrap": "^11.0.2",
     "package-name": "^0.1.0",
     "pdfmake": "^0.2.7",
