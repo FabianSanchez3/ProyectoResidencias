@@ -1,10 +1,11 @@
 import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder, Validators} from '@angular/forms';
-import  ValidateForm from '../helpers/validationform';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import ValidateForm from '../helpers/validationform';
 import { AuthService } from '../services/auth.service';
 import { UserStoreService } from '../services/user-store.service';
 import { NgToastService } from 'ng-angular-popup';
+import { FormsModule } from '@angular/forms';
 
 
 @Component({
@@ -14,24 +15,24 @@ import { NgToastService } from 'ng-angular-popup';
 })
 
 export class LoginComponent implements OnInit {
- public loginForm!:FormGroup;
- type: String= "password"
- isText: boolean = false;
- eyeIcon: string = 'fa-eye-slash';
+  public loginForm!: FormGroup;
+  type: String = "password"
+  isText: boolean = false;
+  eyeIcon: string = 'fa-eye-slash';
 
 
- constructor(
-  private fb: FormBuilder,
-  private auth: AuthService,
-  private router: Router,
-  private toast: NgToastService,
-  private userStore: UserStoreService
+  constructor(
+    private fb: FormBuilder,
+    private auth: AuthService,
+    private router: Router,
+    private toast: NgToastService,
+    private userStore: UserStoreService
   ) { }
 
-  ngOnInit(){
+  ngOnInit() {
     this.loginForm = this.fb.group({
-      username: ['',Validators.required],
-      password: ['',Validators.required]
+      username: ['', Validators.required],
+      password: ['', Validators.required]
     });
 
   }
@@ -42,7 +43,7 @@ export class LoginComponent implements OnInit {
     this.isText ? (this.type = 'text') : (this.type = 'password');
   }
 
-  onSubmit(){
+  onSubmit() {
     if (this.loginForm.valid) {
       console.log(this.loginForm.value);
       this.auth.signIn(this.loginForm.value).subscribe({
@@ -54,11 +55,11 @@ export class LoginComponent implements OnInit {
           const tokenPayload = this.auth.decodedToken();
           this.userStore.setFullNameForStore(tokenPayload.name);
           this.userStore.setRoleForStore(tokenPayload.role);
-          this.toast.success({detail:"SUCCESS", summary:res.message, duration: 5000});
+          this.toast.success({ detail: "SUCCESS", summary: res.message, duration: 5000 });
           this.router.navigate(['dashboard'])
         },
         error: (err) => {
-          this.toast.error({detail:"ERROR", summary:"Something when wrong!", duration: 5000});
+          this.toast.error({ detail: "ERROR", summary: "Something when wrong!", duration: 5000 });
           console.log(err);
         },
       });
@@ -66,4 +67,13 @@ export class LoginComponent implements OnInit {
       ValidateForm.validateAllFormFields(this.loginForm);
     }
   }
+
+
+
+
+
+
+
+
+
 }
