@@ -18,6 +18,7 @@
 
 }
 
+
 .container {
   display: flex;
   justify-content: center;
@@ -197,7 +198,7 @@
   @media (min-width: 414px) and (max-width: 896px) {
     /* Define tus estilos aquí */
     .container {
-      height: 55vh; /* Reduce la altura del contenedor */
+      height: 65vh; /* Reduce la altura del contenedor */
       justify-content: center;
       text-align: left;
       align-items: center;
@@ -210,13 +211,10 @@
     /* Centrado horizontal */
     align-items: center;
     /* Centrado vertical */
-    height: 30vh;
+    height: 40vh;
     /* Altura del 100% de la ventana gráfica */
    
   }
 
 
-
-
-
-
+  
