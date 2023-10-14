@@ -1,3 +1,4 @@
+import { FormControl } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
@@ -45,35 +46,30 @@ export class LoginComponent implements OnInit {
 
   onSubmit() {
     if (this.loginForm.valid) {
-      console.log(this.loginForm.value);
-      this.auth.signIn(this.loginForm.value).subscribe({
-        next: (res) => {
-          console.log(res.message);
-          this.loginForm.reset();
-          this.auth.storeToken(res.accessToken);
-          this.auth.storeRefreshToken(res.refreshToken);
-          const tokenPayload = this.auth.decodedToken();
-          this.userStore.setFullNameForStore(tokenPayload.name);
-          this.userStore.setRoleForStore(tokenPayload.role);
-          this.toast.success({ detail: "SUCCESS", summary: res.message, duration: 5000 });
-          this.router.navigate(['dashboard'])
-        },
-        error: (err) => {
-          this.toast.error({ detail: "ERROR", summary: "Something when wrong!", duration: 5000 });
-          console.log(err);
-        },
-      });
+
+      console.log(this.loginForm.value)
+
     } else {
-      ValidateForm.validateAllFormFields(this.loginForm);
+
+
+
+      this.ValidateAllFormFileds(this.loginForm);
+      alert("TU FORMULARIO ES INVALIDO")
+
     }
   }
 
+     private ValidateAllFormFileds(formGroup:FormGroup){
+      Object.keys(formGroup.controls).forEach(field => {
+        const control = formGroup.get(field);
+        if (control instanceof FormControl){
+          control.markAsDirty({onlySelf:true});
+        }else if(control instanceof FormGroup) {
+          this.ValidateAllFormFileds(control)
+       }
 
+       })
+    }
 
+  }
 
-
-
-
-
-
-}

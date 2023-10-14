@@ -33,28 +33,23 @@ background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, F
 
 }
 
-#forget{
-  min-width: 100px;
-  margin-left: auto;
-  text-decoration: none;
-  cursor: pointer;
-}
-
 a:hover{
   text-decoration: none;
 }
 
 .form-inline label{
   padding-left: 10px;
-  margin: 0;
+  margin: 15;
   cursor: pointer;
 }
 
-.btn{
-  margin-top: 20px;
-  border-radius: 15px;
+.btn-primary{
+  background-color: #92002d;
+  color: white;
+  border-color: rgb(255, 255, 255);
 
 }
+
 
 .panel{
   min-height: 338px;
